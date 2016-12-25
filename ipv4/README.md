@@ -5,7 +5,7 @@ This script is supposed to be run once, from your local machine, with a SSH tunn
 
 ## Getting started
 
-Install dependencies:
+Install dependencies on your local machine:
 
 ```bash 
 sudo apt install libpq-dev python-dev
@@ -38,4 +38,14 @@ Run the script:
 
 ```bash
 python ipv4.py
+```
+
+## Remarks
+
+- add IP addresses to the `exceptions` list to make sure those (maybe reserved) IPs are not inserted.
+- The script resets the `address_pool_id_seq` value to fix this error:
+
+```
+duplicate key value violates unique constraint "address_pool_pkey"
+DETAIL:  Key (id)=(774838) already exists.
 ```

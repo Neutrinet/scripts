@@ -40,6 +40,7 @@ def insert_ipv4s(addresses):
     print "Inserting..."
     conn = connect()
     cur = conn.cursor()
+    cur.execute("SELECT setval('address_pool_id_seq', (SELECT MAX(id) FROM address_pool));")
     for address in addresses:
         sql_statement = '''insert into address_pool
                         (client_id, address, "ipVersion", enabled, "leasedAt", expiry, netmask, purpose)
