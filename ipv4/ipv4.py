@@ -59,8 +59,11 @@ def insert_ipv4s(addresses):
 dotenv.load()
 all_addresses = list_all_possible_ipv4s()
 existing_addresses = get_existing_ipv4s()
-# exceptions= ["80.67.181.255"]
-exceptions= []
+exceptions = []
+for i in range(0, 16):
+    exceptions.append("80.67.181.%d" % i)
+exceptions.append("80.67.181.128")
+exceptions.append("80.67.181.255")
 addresses_to_add = list_ipv4s_to_add(all_addresses, existing_addresses, exceptions)
 
 print "There are %d possible IPv4 addresses for our range. (%s..%s)" % (len(all_addresses), all_addresses[0], all_addresses[-1])
