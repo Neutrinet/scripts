@@ -1,10 +1,10 @@
 #!/bin/bash
 
-usage="Usage: dyndns.sh <ipv4 or ipv6> <domain name> <DNS server to be updated>
+usage="Usage: dyn-reverse-dns.sh <ipv4 or ipv6> <domain name> <DNS server to be updated>
 No trailing dot is needed for the domain"
 
 
-#From http://www.linuxjournal.com/content/validating-ip-address-bash-script
+#Regex stolen from http://www.linuxjournal.com/content/validating-ip-address-bash-script
 
 function valid_ipv4()
 {
@@ -41,7 +41,7 @@ function valid_ipv6()
 function valid_domain 
 {
      local  domain=$1
-# From http://stackoverflow.com/a/20204811	
+#Regex stolen from http://stackoverflow.com/a/20204811	
      match=$(echo $domain | grep -P '(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}\.?$)' -c)
      if [ $match -eq 1 ]
 	then return 0
