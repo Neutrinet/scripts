@@ -54,7 +54,7 @@ DETAIL:  Key (id)=(774838) already exists.
 
 ### get_ips_from_user_ids.py
 
-This script get the IPs associated with a userId.
+This script gets the IP associated with a userId.
 It takes a CSV file as an input, connects to the `ispng` database, and the output is a CSV containing the IP addresses.
 
 ```bash
@@ -63,7 +63,7 @@ python get_ips_from_user_ids.py input_sample.csv outpout.csv
 
 ### free_ips_from_list.py
 
-This script free IPv4 addresses.
+This script frees IPv4 addresses.
 It takes a CSV file as an input, connects to the `ispng` database, and free the IPs listed in the CSV file.
 
 ```bash
@@ -72,9 +72,9 @@ python free_ips_from_list.py ip_to_free_sample.csv
 
 ## How to use those scripts together
 
-- get a list of userId/email (with Tharyrok's script), save it to input.csv
-- get the associated IP addresses: `python get_ips_from_user_ids.py input.csv output.csv`
+- get a list of userId/email for expired certificates (with Tharyrok's script), save it to input.csv
+- get the IP addresses associated with those certificates: `python get_ips_from_user_ids.py input.csv output.csv`
 - manually create a file called `ip_to_free.csv` with the IPs you're sure you can free
-- free those IPs: `python free_ips_from_list.py`
+- free those IPs: `python free_ips_from_list.py ip_to_free.csv`
 
 Look at the sample CSV files in the `csv_samples` directory to check the expected format.
