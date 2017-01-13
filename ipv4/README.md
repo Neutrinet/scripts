@@ -8,7 +8,7 @@ Install dependencies on your local machine:
 sudo apt install libpq-dev python-dev
 ```
 
-In a separate terminal, create the SSH tunel:
+In a separate terminal, create the SSH tunel to be able to connect to the Postgres database from your local machine:
 
 ```bash
 ssh -p 2222 USERNAME@left-panda.neutrinet.be -L 9000:localhost:5432
@@ -65,3 +65,16 @@ python get_ips_from_user_ids.py input_sample.csv outpout.csv
 
 This script free IPv4 addresses.
 It takes a CSV file as an input, connects to the `ispng` database, and free the IPs listed in the CSV file.
+
+```bash
+python free_ips_from_list.py ip_to_free_sample.csv
+```
+
+## How to use those scripts together
+
+- get a list of userId/email (with Tharyrok's script), save it to input.csv
+- get the associated IP addresses: `python get_ips_from_user_ids.py input.csv output.csv`
+- manually create a file called `ip_to_free.csv` with the IPs you're sure you can free
+- free those IPs: `python free_ips_from_list.py`
+
+Look at the sample CSV files in the `csv_samples` directory to check the expected format.
