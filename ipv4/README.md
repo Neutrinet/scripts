@@ -1,4 +1,4 @@
-# ipv4.py
+# add_ipv4.py
 
 This script inserts the IPv4 addresses Neutrinet has in its possession and that are not yet in the `address_pool` table of the `ispng` database.
 This script is supposed to be run once, from your local machine, with a SSH tunnel created to connect to the Postgres server running on `left-panda`.
@@ -37,7 +37,7 @@ vim .env # port should be set to 9000
 Run the script:
 
 ```bash
-python ipv4.py
+python add_ipv4.py
 ```
 
 ## Remarks
