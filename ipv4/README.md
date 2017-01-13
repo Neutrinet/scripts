@@ -1,7 +1,4 @@
-# add_ipv4.py
-
-This script inserts the IPv4 addresses Neutrinet has in its possession and that are not yet in the `address_pool` table of the `ispng` database.
-This script is supposed to be run once, from your local machine, with a SSH tunnel created to connect to the Postgres server running on `left-panda`.
+# Scripts to add/free IPv4s
 
 ## Getting started
 
@@ -34,18 +31,37 @@ cp .env.sample .env
 vim .env # port should be set to 9000
 ```
 
+## Scripts
+
+### add_ipv4.py
+
+This script inserts the IPv4 addresses Neutrinet has in its possession and that are not yet in the `address_pool` table of the `ispng` database.
+This script is supposed to be run once, from your local machine, with a SSH tunnel created to connect to the Postgres server running on `left-panda`.
+
 Run the script:
 
 ```bash
 python add_ipv4.py
 ```
+**Remarks**
 
-## Remarks
-
-- add IP addresses to the `exceptions` list to make sure those (maybe reserved) IPs are not inserted.
 - The script resets the `address_pool_id_seq` value to fix this error:
 
 ```
 duplicate key value violates unique constraint "address_pool_pkey"
 DETAIL:  Key (id)=(774838) already exists.
 ```
+
+### get_ips_from_user_ids.py
+
+This script get the IPs associated with a userId.
+It takes a CSV file as an input, connects to the `ispng` database, and the output is a CSV containing the IP addresses.
+
+```bash
+python get_ips_from_user_ids.py input_sample.csv outpout.csv
+```
+
+### free_ips_from_list.py
+
+This script free IPv4 addresses.
+It takes a CSV file as an input, connects to the `ispng` database, and free the IPs listed in the CSV file.
