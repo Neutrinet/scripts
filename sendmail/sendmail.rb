@@ -32,13 +32,15 @@ def send_email(from, to, subject, body)
     subject subject
     body    body
   end
-  # mail.deliver!
-  puts mail
+  mail.deliver!
+  puts "Sent to #{to}"
 end
 
 CSV.foreach("source.csv") do |row|
-  to = row[0]
-  ip = row[1]
+  to = row[0].strip
+  ip = row[1].strip
   body = personalize_body(body_template, ip)
   send_email(from, to, subject, body)
+  puts "Waiting before sending next email..."
+  sleep(2)
 end
