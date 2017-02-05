@@ -1,0 +1,14 @@
+Bonjour,
+
+Nous vous contactons car vous êtes/avez été membre de Neutrinet.
+Nous sommes en train de mettre notre base de membres à jour.
+
+Souhaitez-vous toujour figurer dans la liste de nos membres?
+Souhaitez-vous toujours utiliser l'adresse IP qui vous a été attribuée avec votre connection VPN?:
+IP_ADDRESS
+
+Sans nouvelle de votre part, nous libérerons cette adresse IP et l'assignerons à d'autres membres au 1er mars 2017.
+
+N'hésitez pas à nous contacter à support@neutrinet.be pour toute question/remarque.
+
+Thomas pour Neutrinet.

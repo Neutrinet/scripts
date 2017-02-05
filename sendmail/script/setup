@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo "==> Installing Bundler…"
+gem install bundler
+
+if [ ! -f .env ]; then
+  echo "==> Create .env file…"
+  cp .env.sample .env
+fi
+
+if [ -f "Gemfile" ]; then
+  echo "==> Installing gem dependencies…"
+  bundle check >/dev/null 2>&1  || {
+    bundle install
+  }
+fi
+
+echo "==> Done!"
