@@ -5,7 +5,7 @@ require 'dotenv'
 Dotenv.load
 
 from = 'Neutrinet <support@neutrinet.be>'
-subject = 'A test email from ruby'
+subject = 'Votre IP Neutrinet / Your Neutrinet IP address'
 body_template = File.read('body.txt')
 
 Mail.defaults do

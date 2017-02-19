@@ -1,14 +1,36 @@
+[English version below]
+
 Bonjour,
 
-Nous vous contactons car vous êtes/avez été membre de Neutrinet.
-Nous sommes en train de mettre notre base de membres à jour.
+Nous vous contactons car vous êtes ou avez été membre de Neutrinet et nous sommes en train d'en mettre à jour la base de données. 
 
-Souhaitez-vous toujour figurer dans la liste de nos membres?
-Souhaitez-vous toujours utiliser l'adresse IP qui vous a été attribuée avec votre connection VPN?:
-IP_ADDRESS
+Votre compte semble être inactif depuis un moment. 
 
-Sans nouvelle de votre part, nous libérerons cette adresse IP et l'assignerons à d'autres membres au 1er mars 2017.
+Souhaitez-vous toujours figurer dans la liste de nos membres ? 
+Souhaitez-vous conserver l'adresse IP (IP_ADDRESS) qui vous a été attribuée avec votre connexion VPN ?
 
-N'hésitez pas à nous contacter à support@neutrinet.be pour toute question/remarque.
+En tant que membre, vous faites partie d'une association qui promeut un internet neutre, libre et solidaire. Le VPN ou la Brique Internet en sont des outils.
+Si vous n'employez plus votre adresse IP, nous pourrons alors l'attribuer à de nouveaux membres. Rien ne vous empêchera d'en redemander une nouvelle à l'avenir !
+
+Sans nouvelles de votre part, nous libérerons votre adresse (IP_ADDRESS) et l'assignerons à d'autres membres au 19 mars 2017.
+
+N'hésitez pas à nous contacter à support@neutrinet.be pour toute question ou remarque.
 
 Thomas pour Neutrinet.
+
+--
+
+Hello,
+
+We're contacting you because you are or you were a member of Neutrinet, and we are in the process of updating our members database.
+
+Do you still want to be listed as one of Neutrinet's members?
+Do you want to keep the IP address (IP_ADDRESS) that was assigned to your VPN connection?
+
+As a member, you're part of an association that promotes a free (as in freedom), neutral and solidary internet. The Internet Cube and the VPN are the tools we use and if you don't use your IP address anymore, we'll assign it to a new member. You can always request a new one if you want to.
+
+If we don't hear from you, we'll assign your IP address (IP_ADDRESS) to a new member on March, 19th 2017.
+
+Feel free to contact us if you have any question (support@neutrinet.be).
+
+Thomas for Neutrinet.
