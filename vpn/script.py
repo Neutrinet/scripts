@@ -82,7 +82,7 @@ def main(email, api_login, api_password=None, dev=False, api_base_url="https://a
     sys.stdout.write("User personnal informations:\n")
 
     if name is None:
-        name = get_user_input("Name", "pouet", dev)
+        name = get_user_input("First name", "pouet", dev)
 
     if last_name is None:
         last_name = get_user_input("Last name", "pouet", dev)
